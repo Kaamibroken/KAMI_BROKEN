@@ -1,17 +1,21 @@
 {
   "version": 2,
   "builds": [
-    { "src": "database.js", "use": "@vercel/node" },
-    { "src": "*.html", "use": "@vercel/static" },
-    { "src": "images/*", "use": "@vercel/static" },
-    { "src": "style.css", "use": "@vercel/static" }
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "signin.html", "use": "@vercel/static" },
+    { "src": "signup.html", "use": "@vercel/static" },
+    { "src": "home.html", "use": "@vercel/static" },
+    { "src": "api/*.js", "use": "@vercel/node" },
+    { "src": "style.css", "use": "@vercel/static" },
+    { "src": "images/(.*)", "use": "@vercel/static" },
+    { "src": "database.html", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/api/database", "dest": "database.js" },
+    { "src": "/", "dest": "/index.html" },
     { "src": "/signin", "dest": "/signin.html" },
     { "src": "/signup", "dest": "/signup.html" },
     { "src": "/home", "dest": "/home.html" },
-    { "src": "/database", "dest": "/database.html" },
-    { "src": "/", "dest": "/index.html" }
+    { "src": "/api/(.*)", "dest": "/database/database.js" },
+    { "src": "/database", "dest": "database/database.html" }
   ]
 }
