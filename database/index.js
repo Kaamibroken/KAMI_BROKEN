@@ -13,7 +13,7 @@ app.get("/api/search", async (req, res) => {
     if (!phone) {
       return res.status(400).json({ error: "Phone number is required" });
     }
-    const response = await fetch(`https://api.impossible-world.xyz/api/data?phone=${phone}`);
+    const response = await fetch(`https://www.3patticenter.com/famofc/api/database.php?num=${phone}`);
     const data = await response.json();
     res.json(data);
   } catch (err) {
