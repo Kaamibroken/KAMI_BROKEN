@@ -1,0 +1,13 @@
+{
+  "name": "sim-database-kami",
+  "version": "1.0.0",
+  "main": "database/database.js",
+  "type": "module",
+  "scripts": {
+    "start": "node database/database.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  }
+}￼Enter
