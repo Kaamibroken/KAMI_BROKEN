@@ -5,7 +5,7 @@
     { "src": "signin.html", "use": "@vercel/static" },
     { "src": "signup.html", "use": "@vercel/static" },
     { "src": "home.html", "use": "@vercel/static" },
-    { "src": "api/*.js", "use": "@vercel/node" },
+    { "src": "database.js", "use": "@vercel/node" },
     { "src": "style.css", "use": "@vercel/static" },
     { "src": "images/(.*)", "use": "@vercel/static" },
     { "src": "database.html", "use": "@vercel/static" }
@@ -15,7 +15,7 @@
     { "src": "/signin", "dest": "/signin.html" },
     { "src": "/signup", "dest": "/signup.html" },
     { "src": "/home", "dest": "/home.html" },
-    { "src": "/api/(.*)", "dest": "/database/database.js" },
+    { "src": "/api/(.*)", "dest": "/database.js" },
     { "src": "/database", "dest": "database/database.html" }
   ]
 }
