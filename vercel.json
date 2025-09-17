@@ -10,7 +10,7 @@
     { "src": "/signin", "dest": "/signin.html" },
     { "src": "/signup", "dest": "/signup.html" },
     { "src": "/home", "dest": "/home.html" },
-    { "src": "/database", "dest": "/database/index.html" },
+    { "src": "/database", "dest": "/database/database.html" },
     { "src": "/", "dest": "/index.html" }
   ]
 }
