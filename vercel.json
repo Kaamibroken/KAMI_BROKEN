@@ -7,11 +7,10 @@
     { "src": "images/**", "use": "@vercel/static-build" }
   ],
   "routes": [
-    { "src": "/api/database", "dest": "/database.js" },
+    { "src": "/api/database(*.)", "dest": "/database.js" },
     { "src": "/signin", "dest": "/signin.html" },
     { "src": "/signup", "dest": "/signup.html" },
     { "src": "/home", "dest": "/home.html" },
-    { "src": "/database", "dest": "/database.html" },
     { "src": "/", "dest": "/index.html" }
   ]
 }
