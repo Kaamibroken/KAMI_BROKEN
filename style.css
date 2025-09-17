@@ -1,0 +1,90 @@
+/* ==========================
+   GLOBAL STYLES
+========================== */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ==========================
+   LOGO
+========================== */
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px; /* square with soft corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* ==========================
+   AVATAR
+========================== */
+.avatar-circle {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to bottom right, #6366f1, #ec4899, #facc15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* ==========================
+   HAMBURGER BUTTON
+========================== */
+.hamburger-btn {
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 240px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.15);
+  padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+  z-index: 50;
+}
+
+.sidebar ul li a {
+  display: block;
+  color: #333;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(99, 102, 241, 0.1); /* indigo hover */
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+.btn-gradient {
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to right, #ec4899, #6366f1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+}
+
+

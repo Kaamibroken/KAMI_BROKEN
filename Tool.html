@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KAAMI_BROKEN Panel</title>
+</head>
+<body style="margin:0; padding:0; font-family:Arial, sans-serif; background:url('images/background.gif') no-repeat center center fixed; background-size:cover; color:white; text-align:center;">
+
+  <!-- Back Button -->
+  <button onclick="goBack()" 
+    style="position:fixed; top:15px; left:15px; 
+           background:transparent; border:none; 
+           font-size:28px; cursor:pointer; color:white;">
+    ⬅
+  </button>
+
+  <script>
+    function goBack() {
+      window.location.href = "home.html"; // Home page ka link
+    }
+  </script>
+
+  <!-- Logo -->
+  <img src="images/kaamibroken.png" alt="KAAMI_BROKEN Logo" style="width:120px; height:120px; border-radius:50%; margin:15px auto; border:3px solid white; display:block;">
+
+  <!-- Title KAAMI_BROKEN (GIF colors) -->
+  <div style="
+    font-size:50px;
+    font-weight:bold;
+    background:linear-gradient(270deg,#ff0000,#ff9900,#33ff00,#00ccff,#9900ff,#ff00aa);
+    background-size:1200% 1200%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation: rainbow 8s linear infinite;
+    margin-top:15px;">
+    KAAMI_BROKEN
+  </div>
+
+  <!-- Telegram Channel Button -->
+  <a href="https://t.me/Kami_Broken5" target="_blank"
+    style="display:inline-block; margin:20px; padding:12px 24px; background:#0088cc; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:18px;">
+    Join Telegram Channel
+  </a>
+
+  <!-- Login Box -->
+  <div id="loginBox" style="background:rgba(0,0,0,0.7); padding:20px; border-radius:12px; width:320px; margin:20px auto;">
+    <h2>Login Panel</h2>
+    <input type="password" id="password" placeholder="Enter Password"
+      style="width:90%; padding:10px; margin:10px 0; border:none; border-radius:6px; font-size:16px;">
+    <button onclick="checkLogin()"
+      style="background:linear-gradient(90deg,#ff6600,#ff3399,#6600ff); color:white; font-weight:bold; border:none; padding:10px 20px; border-radius:6px; cursor:pointer; font-size:16px;">
+      Login
+    </button>
+    <p id="error" style="color:red; display:none; margin-top:10px;">❌ Wrong Password!</p>
+  </div>
+
+  <!-- Credit Button -->
+  <div id="credit" style="display:none; margin-top:20px;">
+    <a href="#" target="_blank"
+       style="display:inline-block; margin:20px; padding:12px 24px; 
+              background:black; color:white; font-weight:bold; 
+              text-decoration:none; border-radius:8px; font-size:18px;
+              background:linear-gradient(270deg,#ff0000,#ff9900,#33ff00,#00ccff,#9900ff,#ff00aa);
+              background-size:1200% 1200%;
+              -webkit-background-clip:text;
+              -webkit-text-fill-color:transparent;
+              animation: rainbow 8s linear infinite;">
+      Credit By KAAMI_BROKEN
+    </a>
+  </div>
+
+  <!-- Mediafire Blocks -->
+  <div id="mediafire" style="display:none; margin:30px auto; max-width:1000px; text-align:center;">
+
+    
+   <!-- Block 1 -->
+    <div style="position:relative; display:inline-block; margin:15px; padding:15px;
+                background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa);
+                border-radius:14px; width:240px; text-align:center;">
+      <span style="position:absolute; top:-10px; left:12px; background:rgba(0,0,0,0.6);
+                   color:white; font-weight:700; padding:6px 8px; border-radius:8px; font-size:14px;">
+        
+      </span>
+      <img src="images/1.png" alt="logo-1.png" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://t.me/Kami_Broken5" target="_blank"
+         style="display:block; padding:12px; background:black; color:white; font-weight:bold;
+                text-decoration:none; border-radius:8px; font-size:16px;">TELEGRAM CHANNEL
+      </a>
+    </div>
+
+    <!-- Block 2 -->
+    <div style="position:relative; display:inline-block; margin:15px; padding:15px;
+                background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa);
+                border-radius:14px; width:240px; text-align:center;">
+      <span style="position:absolute; top:-10px; left:12px; background:rgba(0,0,0,0.6);
+                   color:white; font-weight:700; padding:6px 8px; border-radius:8px; font-size:14px;">
+        
+      </span>
+      <img src="images/2.png" alt="logo-2.png" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://vnshortener.com/OI1X" target="_blank"
+         style="display:block; padding:12px; background:black; color:white; font-weight:bold;
+                text-decoration:none; border-radius:8px; font-size:16px;">2 TIKTOK ADS
+      </a>
+    </div>
+
+    <!-- Block 3 -->
+    <div style="position:relative; display:inline-block; margin:15px; padding:15px;
+                background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa);
+                border-radius:14px; width:240px; text-align:center;">
+      <span style="position:absolute; top:-10px; left:12px; background:rgba(0,0,0,0.6);
+                   color:white; font-weight:700; padding:6px 8px; border-radius:8px; font-size:14px;">
+        
+      </span>
+      <img src="images/3.png" alt="logo-3.png" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://bit.ly/3twA6eQ" target="_blank"
+         style="display:block; padding:12px; background:black; color:white; font-weight:bold;
+                text-decoration:none; border-radius:8px; font-size:16px;">3 TIKTOK ADS part 2
+      </a>
+    </div>
+
+    <!-- Block 4 -->
+    <div style="position:relative; display:inline-block; margin:15px; padding:15px;
+                background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa);
+                border-radius:14px; width:240px; text-align:center;">
+      <span style="position:absolute; top:-10px; left:12px; background:rgba(0,0,0,0.6);
+                   color:white; font-weight:700; padding:6px 8px; border-radius:8px; font-size:14px;">
+        
+      </span>
+      <img src="images/4.png" alt="logo-4.png" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/np7xp5d0nrnpf19/base.apk/file" target="_blank"
+         style="display:block; padding:12px; background:black; color:white; font-weight:bold;
+                text-decoration:none; border-radius:8px; font-size:16px;">4 TIKTOK LIVE
+      </a>
+    </div>
+
+    <!-- Block 5 -->
+    <div style="position:relative; display:inline-block; margin:15px; padding:15px;
+                background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa);
+                border-radius:14px; width:240px; text-align:center;">
+      <span style="position:absolute; top:-10px; left:12px; background:rgba(0,0,0,0.6);
+                   color:white; font-weight:700; padding:6px 8px; border-radius:8px; font-size:14px;">
+        
+      </span>
+      <img src="images/5.png" alt="logo-5.png" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/xmsm6bsmfa57ooi/app3554846-qnu49y.apk/file" target="_blank"
+         style="display:block; padding:12px; background:black; color:white; font-weight:bold;
+                text-decoration:none; border-radius:8px; font-size:16px;">5 D Vs T Hack PASS 66778899
+      </a>
+    </div>
+
+    <!-- Block 6 -->
+    <div style="position:relative; display:inline-block; margin:15px; padding:15px;
+                background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa);
+                border-radius:14px; width:240px; text-align:center;">
+      <span style="position:absolute; top:-10px; left:12px; background:rgba(0,0,0,0.6);
+                   color:white; font-weight:700; padding:6px 8px; border-radius:8px; font-size:14px;">
+        
+      </span>
+      <img src="images/6.png" alt="logo-6.png" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/6no8ilewjrlfh9t/DARK%25E2%2584%25A246-DATABASE.apk/file" target="_blank"
+         style="display:block; padding:12px; background:black; color:white; font-weight:bold;
+                text-decoration:none; border-radius:8px; font-size:16px;">6 Team 46 Database
+      </a>
+    </div>
+
+    <!-- Block 7 -->
+    <div style="position:relative; display:inline-block; margin:15px; padding:15px;
+                background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa);
+                border-radius:14px; width:240px; text-align:center;">
+      <span style="position:absolute; top:-10px; left:12px; background:rgba(0,0,0,0.6);
+                   color:white; font-weight:700; padding:6px 8px; border-radius:8px; font-size:14px;">
+        
+      </span>
+      <img src="images/7.png" alt="logo-7.png" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/y2hu02p4mrrwmon/Dark_Team-46-ban_unban.zip/file" target="_blank"
+         style="display:block; padding:12px; background:black; color:white; font-weight:bold;
+                text-decoration:none; border-radius:8px; font-size:16px;">7 Team 46 Ban Unban
+      </a>
+    </div>
+
+    <!-- Block 8 -->
+    <div style="position:relative; display:inline-block; margin:15px; padding:15px;
+                background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa);
+                border-radius:14px; width:240px; text-align:center;">
+      <span style="position:absolute; top:-10px; left:12px; background:rgba(0,0,0,0.6);
+                   color:white; font-weight:700; padding:6px 8px; border-radius:8px; font-size:14px;">
+        
+      </span>
+      <img src="images/8.png" alt="logo-8.png" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/yek0le0lcfri361/AKHACKER+TOOLKIT.apk/file" target="_blank"
+         style="display:block; padding:12px; background:black; color:white; font-weight:bold;
+                text-decoration:none; border-radius:8px; font-size:16px;">8 AKHACKER TOOLKIT
+      </a>
+    </div>
+
+    <!-- Block 9 -->
+    <div style="position:relative; display:inline-block; margin:15px; padding:15px;
+                background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa);
+                border-radius:14px; width:240px; text-align:center;">
+      <span style="position:absolute; top:-10px; left:12px; background:rgba(0,0,0,0.6);
+                   color:white; font-weight:700; padding:6px 8px; border-radius:8px; font-size:14px;">
+        
+      </span>
+      <img src="images/9.png" alt="logo-9.png" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/o3we6o0lom675qp/DARK_VIP_HACK_%25F0%259F%2592%2580_1.0.apk/file" target="_blank"
+         style="display:block; padding:12px; background:black; color:white; font-weight:bold;
+                text-decoration:none; border-radius:8px; font-size:16px;">9 Team 46 Wingo Hack
+      </a>
+    </div>
+
+    <!-- Block 10 -->
+    <div style="position:relative; display:inline-block; margin:15px; padding:15px;
+                background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa);
+                border-radius:14px; width:240px; text-align:center;">
+      <span style="position:absolute; top:-10px; left:12px; background:rgba(0,0,0,0.6);
+                   color:white; font-weight:700; padding:6px 8px; border-radius:8px; font-size:14px;">
+      </span>
+      <img src="images/10.png" alt="logo-10.png" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/7ucypcitvr7vv3h/UNLIMITED_GMAIL_CREATE_METHOD_BY_AKHACKER.zip/file" target="_blank"
+         style="display:block; padding:12px; background:black; color:white; font-weight:bold;
+                text-decoration:none; border-radius:8px; font-size:16px;">10 Unlimited Gmail Method
+      </a>
+    </div>
+
+    <!-- Block 11 -->
+    <div style="position:relative; display:inline-block; margin:15px; padding:15px;
+                background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa);
+                border-radius:14px; width:240px; text-align:center;">
+      <span style="position:absolute; top:-10px; left:12px; background:rgba(0,0,0,0.6);
+                   color:white; font-weight:700; padding:6px 8px; border-radius:8px; font-size:14px;"> 
+      </span>
+      <img src="images/11.png" alt="logo-11.png" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/r2anvhu8p8qyrne/OWN_TOOLKIT_APK_METHOD.zip/file" target="_blank"
+         style="display:block; padding:12px; background:black; color:white; font-weight:bold;
+                text-decoration:none; border-radius:8px; font-size:16px;">11 How To Create Toolkit
+      </a>
+    </div>
+
+    <!-- Block 12 -->
+    <div style="position:relative; display:inline-block; margin:15px; padding:15px;
+                background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa);
+                border-radius:14px; width:240px; text-align:center;">
+      <span style="position:absolute; top:-10px; left:12px; background:rgba(0,0,0,0.6);
+                   color:white; font-weight:700; padding:6px 8px; border-radius:8px; font-size:14px;">
+      </span>
+      <img src="images/12.png" alt="logo-12.png" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/j8gicss3ybiwpmw/FAKE_NUMBER_TRICK.zip/file" target="_blank"
+         style="display:block; padding:12px; background:black; color:white; font-weight:bold;
+                text-decoration:none; border-radius:8px; font-size:16px;">12 Fake Number Trick
+      </a>
+    </div>
+  <!-- Block 13 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/13.png" alt="Logo 13" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/xchzwxqtip9ybal/HEY+I+M+ROSA.Whatsapp.banning.method.by.Drakz.zip/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">13 Whatsapp ban</a>
+</div>
+
+<!-- Block 14 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/14.png" alt="Logo 14" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/8tjcfsn9pabgiji/LucaxxXInvsible+V9+Crash.zip.bak.provided.by.drakz/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">14 Bug Bot</a>
+</div>
+
+<!-- Block 15 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/15.png" alt="Logo 15" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/gs6t90yhfix9k2b/DeftonesX+V3+Vvip+Only+New+Version.zip.provided.by.drakz/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">15 Bug Bot 2</a>
+</div>
+
+<!-- Block 16 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/16.png" alt="Logo 16" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://namso-gen.com" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">16 CC Maker</a>
+</div>
+
+<!-- Block 17 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/17.png" alt="Logo 17" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/oamgxd4rehonqpn/APP_CLONERPRO_BY_DRAKZ_TECH.apk/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">17 App Cloner Pro</a>
+</div>
+
+<!-- Block 18 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/18.png" alt="Logo 18" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/3xkkzunxm0evx6c/Garena_Reward_%25281%2529.apk/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">18 Free Fire Hack</a>
+</div>
+
+<!-- Block 19 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/19.png" alt="Logo 19" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/5i11mnan5jjcoyb/HOW_TO_USE_H%2540%2523K.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">19 Free Fire Hack Use</a>
+</div>
+
+<!-- Block 20 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/20.png" alt="Logo 20" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://drive.google.com/file/d/1UXIauIgH_rrYMJIcdo1igOTZvioFhNCL/view?usp=drivesdk" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">20 Mobile Hack</a>
+</div>
+
+<!-- Block 21 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/21.png" alt="Logo 21" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://drive.google.com/file/d/10SH6XizalAV1t4nQIL5DZg5xCwVbg9pm/view?usp=drivesdk" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">21 Gmail Create method</a>
+</div>
+
+<!-- Block 22 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/22.png" alt="Logo 22" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://drive.google.com/file/d/1XUv77x_gW_0EnQhLinNjHbdPST4kmL1m/view?usp=drivesdk" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">22 Recover Facebook</a>
+</div>
+
+<!-- Block 23 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/23.png" alt="Logo 23" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://drive.google.com/file/d/1BOBW0_Q2EQYE3AD3YbWZe0R0hXP_nwTO/view?usp=drivesdk" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">23 How To Make Ai Video</a>
+</div>
+
+<!-- Block 24 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/24.png" alt="Logo 24" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/v3c6if5xkbs1hr6/Jazz_Unlimited_Mbs.zip/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">24 Jazz Pkg Trick Free</a>
+</div>
+
+<!-- Block 25 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/25.png" alt="Logo 25" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://drive.google.com/folderview?id=1-5lTQqSSm-MwKo-956ISID1ERrXUME3e" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">25 Wifi Hack</a>
+</div>
+
+<!-- Block 26 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/26.png" alt="Logo 26" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://livetrackor.site/CodeEncryptor/" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">26 All Web Code Show</a>
+</div>
+
+<!-- Block 27 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/27.png" alt="Logo 27" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/vmgbbob0yyxlsmp/WHATSAP_CHANNEL_BAN_%252CMETHOD.zip/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">27 WA Channel B@n Method</a>
+</div>
+
+<!-- Block 28 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/28.png" alt="Logo 28" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://t.me/Nun_SMSBOT?start=7325214936" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">28 Fake Number Bot</a>
+</div>
+
+<!-- Block 29 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/29.png" alt="Logo 29" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://docs.google.com/document/d/1KN_fCQtvqfOXT6D9AQQVOBozvorZfOtTy-fBPCN_tf8/edit?usp=drivesdk" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">29 SnapChat B@n Method</a>
+</div>
+
+<!-- Block 30 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/30.png" alt="Logo 30" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://drive.google.com/file/d/1Vmt9R4G44ZamP5yZQ6APwgAp3fmaSivZ/view?usp=drivesdk" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">30 FaceBook Hack</a>
+</div>
+   <!-- Block 31 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/31.png" alt="Logo 31" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://drive.google.com/drive/folders/13fZNd3W2P3RgS0qArzL4OHpfzNbKoxQ9" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">31 Usa Gmail Create
+      </a>
+    </div>
+   <!-- Block 32 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/32.png" alt="Logo 32" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/watf6hh6jhgx995/GMAIL_WITHOUT_PHONE_NUMBERS_.zip/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">32 Unlimited Gmail Maker
+      </a>
+    </div>
+   <!-- Block 33 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/33.png" alt="Logo 33" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/ytwzd2kk0efzzat/YouTube_4k_Watchtime_Methid_By_AbheeBhai_Mods.zip/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">33 YT Watch Time
+      </a>
+    </div>
+   <!-- Block 34 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/34.png" alt="Logo 34" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://drive.google.com/drive/folders/1QSi6p4NyX1YJaysUMjF2C3UCXbgjvIJ6" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">34 Ai Auto Caption
+      </a>
+    </div>
+   <!-- Block 35 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/35.png" alt="Logo 35" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://drive.google.com/file/d/1LculrtsyTsD2imQIOcckapfSwFx9qHPc/view?usp=sharing" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">35 Free Nord Vpn Trick
+      </a>
+    </div>
+   <!-- Block 36 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/36.png" alt="Logo 36" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.canva.com/brand/join?token=uIrwlzt_YRi3fO7SD0vdKQ&referrer=team-invite" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">36 Canva Pro
+      </a>
+    </div>
+   <!-- Block 37 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/37.png" alt="Logo 37" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://drive.google.com/file/d/16gvge6bZUGo-s79xdgyrJ6KTK-l7DuT9/view?usp=drivesdk" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">37 Instagram Hack
+      </a>
+    </div>
+   <!-- Block 38 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/38.png" alt="Logo 38" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/folder/miglx7lcmwmpj/non+Pta+Approved+Trick" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">38 Mobile Pta Trick
+      </a>
+    </div>
+   <!-- Block 39 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/39.png" alt="Logo 39" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/folder/v7eldcj17yej5/Girl+Voice+Changer" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">39 Voice Changer
+      </a>
+    </div>
+   <!-- Block 40 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/40.png" alt="Logo 40" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/folder/smcniqg480w0c/Autosave+Contact" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">40 WA Auto Save Contact
+      </a>
+    </div>
+   <!-- Block 41 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/41.png" alt="Logo 41" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/g79xqnrq3i9usgg/Carding_Course_By__Suliman_Hacker.rar/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">41 Carding Course
+      </a>
+    </div>
+   <!-- Block 42 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/42.png" alt="Logo 42" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.callbomberz.in/" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">42 Call Bomber
+      </a>
+    </div>
+   <!-- Block 43 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/43.png" alt="Logo 43" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/osd0cekmnrfsssi/How_to_make_tiktok_uk_usa_japan_account.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">43 TikTok Usa Uk Acc Create
+      </a>
+    </div>
+   <!-- Block 44 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/44.png" alt="Logo 44" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://drive.google.com/file/d/1Cql6f6iATY9uKytm8_9-bSznMRuI_vir/view?usp=drivesdk" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">44 WiFi Hack
+      </a>
+    </div>
+   <!-- Block 45 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/45.png" alt="Logo 45" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/bwhis8qck7bw2dx/CREATE_YOUR_OWN_SIM_DATABASE.zip/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">45 Create Sim Database Web
+      </a>
+    </div>
+   <!-- Block 46 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/46.png" alt="Logo 46" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/q7klk0e100ptrxq/WEBSITE_CODE.zip/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">46 Create Sim Database Web part 2
+      </a>
+    </div>
+   <!-- Block 47 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/47.png" alt="Logo 47" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/mbnqx51ko4hspu2/UNLIMITED_MEMBERS_TRICK_BY_DARK_LEGEND.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">47 Group Full Trick
+      </a>
+    </div>
+   <!-- Block 48 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/48.png" alt="Logo 48" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/y78pzecdr5bmj7y/Pubg_Hack_Making_Course.rar/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">48 Pubg Hack Making Course
+      </a>
+    </div>
+   <!-- Block 49 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/49.png" alt="Logo 49" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/uprld7kdv72p003/How_To_Unlock_Lockscreen_Of_Android_Phone_Using_ADB_BY_HARI_CYBER_%25F0%259F%2592%2580.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">49 Mobile Phone Unlocker
+      </a>
+    </div>
+   <!-- Block 50 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/50.png" alt="Logo 50" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://drive.google.com/file/d/18Bo10ZadGJpZjQPQJz1Y5CtTHBJZCMiS/view?usp=drivesdk" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">50 Mobile Hack with Link
+      </a>
+    </div>
+   <!-- Block 51 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/51.png" alt="Logo 51" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://chat.whatsapp.com/Fvse6ODkgMM4if2vTp4LXX" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">51 Whatsapp Ban 2025 method</a>
+</div>
+
+<!-- Block 52 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/52.png" alt="Logo 52" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://play.google.com/store/apps/details?id=xyz.sevennetvpn.org" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">52 Jazz Free Internet</a>
+</div>
+
+<!-- Block 53 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/53.png" alt="Logo 53" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/folder/h179c5sg8yeaf/Perma+Unban+Apk" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">53 Whatsapp unban</a>
+</div>
+
+<!-- Block 54 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/54.png" alt="Logo 54" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://drive.google.com/file/d/1LculrtsyTsD2imQIOcckapfSwFx9qHPc/view?usp=sharing" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">54 YT Free premium Trick</a>
+</div>
+
+<!-- Block 55 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/55.png" alt="Logo 55" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/gs6t90yhfix9k2b/DeftonesX+V3+Vvip+Only+New+Version.zip.provided.by.drakz/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">55 Heavy Bug Bot 🐛</a>
+</div>
+
+<!-- Block 56 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/56.png" alt="Logo 56" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/x871rqnd1uo9elb/UNKOWNSACALLKROUNLIMITEDMETHODBYJADOON.zip/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">56 Without Balance Call</a>
+</div>
+
+<!-- Block 57 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/57.png" alt="Logo 57" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/67wafqmb05fpjsi/Free_Fire_Hack.7z/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">57 Free Fire Hack</a>
+</div>
+
+<!-- Block 58 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/58.png" alt="Logo 58" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/eih6rex1zv9hw0n/HEADSHOT_FILE_BY_SASUKE.zip/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">58 Headshot File</a>
+</div>
+
+<!-- Block 59 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/59.png" alt="Logo 59" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/fedpj1p5ialdxyo/XSUIT_FILE_BY_SASUKA.zip/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">59 Free Fire Panel</a>
+</div>
+
+<!-- Block 60 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/60.png" alt="Logo 60" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/pd5q2qavkecxun9/global_magic_bullet_location.7z/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">60 Magic Bullet Location</a>
+</div>
+
+<!-- Block 61 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/61.png" alt="Logo 61" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/te2fk3e506b4s78/Android_reset_-1.apk/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">61 Mobile Reset Apk</a>
+</div>
+
+<!-- Block 62 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/62.png" alt="Logo 62" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/9jgmo5ivcuykkqy/AimKing-Main02_3.1.5.apk.bak/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">62 8 ball Poll Hack</a>
+</div>
+
+<!-- Block 63 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/63.png" alt="Logo 63" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/3dkqm3t565c6syc/TeraBox_3.27.1.apk/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">63 Tera box Premium</a>
+</div>
+<!-- Block 64 -->
+<div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+  <img src="images/64.png" alt="Logo 64" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+  <a href="https://www.mediafire.com/file/xa9daq27ig76r3t/TIKTOK+VIDEO+VIRAL+5+METHOD+BY+SIGMA+TECH+(720P_HD).7z/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">64 TikTok Viral video Trick</a>
+</div>
+
+<!-- Block 65 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/65.png" alt="Logo 65" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/9inlglp6h9as9o2/How_to_make_android_game_by_SIGMA_TECH_%2528720p%252C_h264%2529%25282%2529.7z/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">65 Make 3D Game</a>
+    </div>
+
+   <!-- Block 66 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/66.png" alt="Logo 66" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/mi5ze0qihdq948r/TIKTOK_ID_BAN_FULL_METHOD.7z/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">66 TikTok I'd Ban Method</a>
+    </div>
+
+   <!-- Block 67 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/67.png" alt="Logo 67" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/m9oea48hvul24ic/Create+Unlimited+Gmail+Account+without+Phone+Number+2025.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">67 Unlimited Gmail</a>
+    </div>
+
+   <!-- Block 68 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/68.png" alt="Logo 68" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/25s1wy8xssfmvrn/JAZZCASH_WITHOUT_BIOMATRIC_BY_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">68 JazzCash Without Biomatric Part 1</a>
+    </div>
+
+   <!-- Block 69 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/69.png" alt="Logo 69" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/y962dzat5b5kwsr/jazzcash-customer-9-0-36_%25281%2529.apk/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">69 JazzCash Without Biomatric Part 2</a>
+    </div>
+
+   <!-- Block 70 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/70.png" alt="Logo 70" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/n1wf7cqfqynlbum/How_to_Recover_Gmail_Account_without_Verification_Code_Password_Phone_Number_2025%2528360P%2529.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">70 How To Recover Gmail</a>
+    </div>
+
+   <!-- Block 71 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/71.png" alt="Logo 71" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/n1wf7cqfqynlbum/How_to_Recover_Gmail_Account_without_Verification_Code_Password_Phone_Number_2025%2528360P%2529.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">71 How To Make Web Part 1</a>
+    </div>
+
+   <!-- Block 72 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/72.png" alt="Logo 72" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/okgymti3keug8mq/HOW_TO_USE.7z/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">72 How To Make Web Part 2</a>
+    </div>
+
+   <!-- Block 73 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/73.png" alt="Logo 73" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/0vgd96mq5kaxt3c/How_to_Create_TIKTOK_UK_Account_Without_VPN_in_Pakistan_TikTok_UK_Account_Kaise_Banaye%2528720P_HD%2529.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">73 How To Create TikTok UK I'd</a>
+    </div>
+
+   <!-- Block 74 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/74.png" alt="Logo 74" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/y4gjx61ihvup87i/How_to_Create_Apple_ID_%257C_Apple_ID_Without_Phone_Number_%257C_Apple_ID_Make_Easy_%257C_Apple_ID_Trick_2025%25281%2529.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">74 How To Create Apple ID</a>
+    </div>
+
+   <!-- Block 75 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/75.png" alt="Logo 75" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/mxz5rz1ph7xjkl4/Free_Udemy_Courses_2025_%257C_Lifetime_Access_%257C_Udemy_Free_Courses_Trick_%257C_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">75 Free Udemy Courses</a>
+    </div>
+
+   <!-- Block 76 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/76.png" alt="Logo 76" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/6f8j4crh2ivf1f8/Free_VPS_Server_2025_%257C_Lifetime_Access_%257C_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">76 Free VPS Server</a>
+    </div>
+
+   <!-- Block 77 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/77.png" alt="Logo 77" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/n9t1anbyor2dt9a/Free_RDP_Server_2025_%257C_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">77 Free RDP Server</a>
+    </div>
+
+   <!-- Block 78 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/78.png" alt="Logo 78" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/ihm3ekao6c3h6vu/Free_Netflix_Account_2025_%257C_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">78 Free Netflix Account</a>
+    </div>
+
+   <!-- Block 79 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/79.png" alt="Logo 79" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/8otw5d1r4o5n54o/Free_Spotify_Premium_2025_%257C_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">79 Free Spotify Premium</a>
+    </div>
+
+   <!-- Block 80 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/80.png" alt="Logo 80" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/pc48ocj5exmfq3h/Free_Disney%252B_Account_2025_%257C_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">80 Free Disney+ Account</a>
+    </div>
+
+   <!-- Block 81 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/81.png" alt="Logo 81" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/zq5saj60d9h0a8s/Free_ChatGPT_Plus_2025_%257C_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">81 Free ChatGPT Plus</a>
+    </div>
+
+   <!-- Block 82 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/82.png" alt="Logo 82" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/ij5nq3x4iynxw7y/Free_MidJourney_Account_2025_%257C_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">82 Free MidJourney Account</a>
+    </div>
+
+   <!-- Block 83 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/83.png" alt="Logo 83" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/c75p4y4g84w1gl9/Free_Microsoft_Office_365_2025_%257C_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">83 Free MS Office 365</a>
+    </div>
+
+   <!-- Block 84 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/84.png" alt="Logo 84" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/d9zk2h0j1r3e8s3/Free_Domain_And_Hosting_2025_%257C_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">84 Free Domain + Hosting</a>
+    </div>
+
+   <!-- Block 85 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/85.png" alt="Logo 85" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/2c7gk0l8wrt7o0x/Free_Amazon_Prime_Account_2025_%257C_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">85 Free Amazon Prime</a>
+    </div>
+
+   <!-- Block 86 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/86.png" alt="Logo 86" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/a3mvxppfopxmhsl/Free_Google_Cloud_Account_2025_%257C_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">86 Free Google Cloud</a>
+    </div>
+
+   <!-- Block 87 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/87.png" alt="Logo 87" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/hb8ij3cmc0mknsl/Free_Adobe_Photoshop_2025_%257C_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">87 Free Adobe Photoshop</a>
+    </div>
+
+   <!-- Block 88 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/88.png" alt="Logo 88" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/lzjcbp1j2kfn32j/Free_AI_Tools_2025_%257C_SIGMA_TECH.mp4/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">88 Free AI Tools</a>
+    </div>
+
+   <!-- Block 89 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/89.png" alt="Logo 89" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/8tl53nj5j4a6tq7/OWN_CAMERA_HACKING_BOT_METHOD.zip/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">89 Camera Hack</a>
+    </div>
+
+   <!-- Block 90 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/90.png" alt="Logo 90" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/mznusuvzkmzy11p/GIRL_VICE_CHANGER_METHOD.zip/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">90 Girl Voice Changer</a>
+    </div>
+
+   <!-- Block 91 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/91.png" alt="Logo 91" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/74gzqgtzwdhjbyq/TEENPATII_H%2540CK.7z/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">91 Create TeenPati Hack Part 1</a>
+    </div>
+
+   <!-- Block 92 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/92.png" alt="Logo 92" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/xnlqnomtvu2kb7l/HTML_CODE_TEENPATII_index.html.zip/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">92 Create TeenPati Hack Part 2</a>
+    </div>
+
+   <!-- Block 93 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/93.png" alt="Logo 93" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/p9ttpay424bgz51/GALLERY_CRASH_APK_BY_SIGMA_TECH.apk/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">93 Gallery Crash</a>
+    </div>
+
+   <!-- Block 94 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/94.png" alt="Logo 94" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/9y9pqf713mm2szp/HOW_TO_UNBAN_PUBG_ID_BY_SIGMA_TECH.7z/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">94 Unban Pubg I'd Part 1</a>
+    </div>
+
+   <!-- Block 95 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/95.png" alt="Logo 95" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/di1bqucf4u6f00p/UNBAN_APPEAL_BY_ALI_X_ROYAL/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">95 Unban Pubg I'd Part 2</a>
+    </div>
+
+   <!-- Block 96 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/96.png" alt="Logo 96" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/d6lyxjy113ulgql/RANDOM_10000%252BGAMES_ACCOUNTS_by_SIGMA_TECH.7z/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">96 10000+ Game Account</a>
+    </div>
+
+   <!-- Block 97 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/97.png" alt="Logo 97" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/izyf4guejmt7244/ALL_VIDEO_DOWNLOADER_BY_SIGMA_TECH.7z/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">97 Video Downloader</a>
+    </div>
+
+   <!-- Block 98 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/98.png" alt="Logo 98" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/szh36ahft3qyd69/Root_Any_Phone_by_SIGMA_TECH_.7z/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">98 How To Root Phone 1</a>
+    </div>
+
+   <!-- Block 99 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/99.png" alt="Logo 99" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://magiskmanager.com/magisk-beta/" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">99 Root Part 2</a>
+    </div>
+
+   <!-- Block 100 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/100.png" alt="Logo 100" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://play.google.com/store/apps/details?id=com.joeykrim.rootcheck" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">100 Root Part 3</a>
+    </div>
+
+   <!-- Block 101 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/101.png" alt="Logo 101" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://www.mediafire.com/file/26gwstfa3vmwr1i/Whatsapp_Hack_2025_New_Method+by_DARK™46.zip/file" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">101 Whatsapp Hack + By DARK™46</a>
+    </div>
+
+   <!-- Block 102 -->
+    <div style="display:inline-block; margin:15px; padding:15px; background:linear-gradient(90deg,#33ff00,#00ccff,#ff9900,#9900ff,#ff00aa); border-radius:14px; width:240px; text-align:center;">
+      <img src="images/102.png" alt="Logo 102" style="width:70px; height:70px; border-radius:50%; margin-bottom:10px; border:2px solid white;">
+      <a href="https://whatsapp.com/channel/0029Vb6MASqA2pLElPLw310V" target="_blank" style="display:block; padding:12px; background:black; color:white; font-weight:bold; text-decoration:none; border-radius:8px; font-size:16px;">102 Whatsapp Permanent Banned Trick</a>
+    </div>
+
+  </div>
+
+  <!-- Logout Button (sabse neeche) -->
+  <div id="logoutDiv" style="display:none; margin:50px auto 20px auto;">
+    <button onclick="logout()" style="padding:10px 20px; font-size:16px; font-weight:bold; border:none; border-radius:8px; cursor:pointer; background:red; color:white;">
+      Logout
+    </button>
+  </div>
+
+  <!-- JavaScript for Login and Logout -->
+  <script>
+    function checkLogin() {
+      var pass = document.getElementById("password").value;
+      if(pass === "kkk"){
+        document.getElementById("loginBox").style.display = "none";
+        document.getElementById("credit").style.display = "block";
+        document.getElementById("mediafire").style.display = "block";
+        document.getElementById("logoutDiv").style.display = "block";
+      } else {
+        document.getElementById("error").style.display = "block";
+      }
+    }
+
+    function logout() {
+      document.getElementById("loginBox").style.display = "block";
+      document.getElementById("credit").style.display = "none";
+      document.getElementById("mediafire").style.display = "none";
+      document.getElementById("logoutDiv").style.display = "none";
+      document.getElementById("password").value = "";
+      document.getElementById("error").style.display = "none";
+    }
+  </script>
+
+  <!-- Rainbow animation for GIF colors -->
+  <style>
+    @keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+
+</body>
+</html>

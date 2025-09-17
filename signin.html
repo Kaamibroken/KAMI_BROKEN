@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kami Flex - Sign In</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-200 via-pink-200 to-purple-200">
+
+  <div class="bg-white/80 p-8 rounded-2xl shadow-xl w-full max-w-md">
+    <h2 class="text-3xl font-bold text-center mb-6">Sign In</h2>
+
+    <!-- Toggle Buttons -->
+    <div class="flex justify-center gap-4 mb-6">
+      <button onclick="switchMode('email')" id="btnEmail" class="px-4 py-2 rounded-full bg-purple-500 text-white">Email</button>
+      <button onclick="switchMode('phone')" id="btnPhone" class="px-4 py-2 rounded-full bg-gray-200">Phone</button>
+    </div>
+
+    <form id="loginForm" class="space-y-4">
+      <div id="emailField">
+        <label class="block text-sm font-medium mb-1">Email</label>
+        <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg" />
+      </div>
+
+      <div id="phoneField" class="hidden">
+        <label class="block text-sm font-medium mb-1">Phone</label>
+        <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium mb-1">Password</label>
+        <input type="password" id="password" required class="w-full px-4 py-2 border rounded-lg" />
+      </div>
+
+      <button type="submit" class="w-full py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full">Login</button>
+    </form>
+
+    <!-- Signup Button -->
+    <p class="text-center text-sm mt-4">Don’t have an account? 
+      <a href="signup.html" class="text-blue-600 font-semibold">Sign Up</a>
+    </p>
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="popup" class="fixed inset-0 flex items-center justify-center bg-black/50 hidden">
+    <div class="bg-white p-6 rounded-2xl shadow-2xl w-80 text-center">
+      <h3 id="popupTitle" class="text-xl font-bold mb-2">Title</h3>
+      <p id="popupMessage" class="text-gray-600 mb-4">Message here...</p>
+      <button onclick="closePopup()" class="px-6 py-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white">OK</button>
+    </div>
+  </div>
+
+  <script>
+    let loginMode = "email";
+
+    function switchMode(mode){
+      loginMode = mode;
+      if(mode === "email"){
+        document.getElementById("emailField").classList.remove("hidden");
+        document.getElementById("phoneField").classList.add("hidden");
+        document.getElementById("btnEmail").classList.add("bg-purple-500","text-white");
+        document.getElementById("btnPhone").classList.remove("bg-purple-500","text-white");
+        document.getElementById("btnPhone").classList.add("bg-gray-200");
+      } else {
+        document.getElementById("phoneField").classList.remove("hidden");
+        document.getElementById("emailField").classList.add("hidden");
+        document.getElementById("btnPhone").classList.add("bg-purple-500","text-white");
+        document.getElementById("btnEmail").classList.remove("bg-purple-500","text-white");
+        document.getElementById("btnEmail").classList.add("bg-gray-200");
+      }
+    }
+
+    function showPopup(title, message, redirect=null){
+      document.getElementById("popupTitle").innerText = title;
+      document.getElementById("popupMessage").innerText = message;
+      document.getElementById("popup").classList.remove("hidden");
+
+      if(redirect){
+        setTimeout(()=>{ window.location.href = redirect; },1500);
+      }
+    }
+
+    function closePopup(){
+      document.getElementById("popup").classList.add("hidden");
+    }
+
+    document.getElementById("loginForm").addEventListener("submit", function(e){
+      e.preventDefault();
+
+      const email = document.getElementById("email").value.trim().toLowerCase();
+      const phone = document.getElementById("phone").value.trim();
+      const password = document.getElementById("password").value;
+
+      let users = JSON.parse(localStorage.getItem("users") || "[]");
+
+      let user = null;
+      if(loginMode === "email"){
+        user = users.find(u => u.email && u.email.toLowerCase() === email && u.password === password);
+      } else {
+        user = users.find(u => u.phone && u.phone === phone && u.password === password);
+      }
+
+      if(!user){
+        showPopup("❌ Error", "Invalid credentials or account does not exist!");
+        return;
+      }
+
+      localStorage.setItem("currentUser", JSON.stringify(user));
+
+      showPopup("✅ Success", "Login successful!", "home.html");
+    });
+  </script>
+</body>
+</html>
