@@ -2,12 +2,12 @@
   "version": 2,
   "builds": [
     { "src": "index.html", "use": "@vercel/static" },
-    { "src": "database.js", "use": "@vercel/node" },
-    { "src": "database.html", "use": "@vercel/static" }
+    { "src": "database/database.js", "use": "@vercel/node" },
+    { "src": "database/database.html", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/", "dest": "/index.html" },
-    { "src": "/api/(.*)", "dest": "/database.js" },
-    { "src": "/", "dest": "/database.html" }
+    { "src": "/api/database(.*)", "dest": "/database.js" },
+    { "src": "/database", "dest": "/database.html" }
   ]
 }
