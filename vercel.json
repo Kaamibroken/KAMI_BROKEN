@@ -2,15 +2,16 @@
   "version": 2,
   "builds": [
     { "src": "database.js", "use": "@vercel/node" },
-    { "src": "*.html", "use": "@vercel/static-build" },
-    { "src": "style.css", "use": "@vercel/static-build" },
-    { "src": "images/**", "use": "@vercel/static-build" }
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "images/*", "use": "@vercel/static" },
+    { "src": "style.css", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/api/database(*.)", "dest": "/database.js" },
+    { "src": "/api/database", "dest": "database.js" },
     { "src": "/signin", "dest": "/signin.html" },
     { "src": "/signup", "dest": "/signup.html" },
     { "src": "/home", "dest": "/home.html" },
+    { "src": "/database", "dest": "/database.html" },
     { "src": "/", "dest": "/index.html" }
   ]
 }
