@@ -2,9 +2,9 @@
   "name": "kami-flex",
   "version": "1.0.0",
   "description": "Kami Flex Website with Database",
-  "main": "database.js",
+  "main": "database/database.html",
   "scripts": {
-    "start": "node database.js"
+    "start": "node database/database.js"
   },
   "dependencies": {
     "express": "^4.18.2",
