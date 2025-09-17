@@ -7,7 +7,7 @@
   ],
   "routes": [
     { "src": "/", "dest": "/index.html" },
-    { "src": "/api/database(.*)", "dest": "/database.js" },
+    { "src": "/api/(.*)", "dest": "database/database.js" },
     { "src": "/database", "dest": "/database.html" }
   ]
 }
