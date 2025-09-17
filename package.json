@@ -1,10 +1,10 @@
 {
   "name": "kami-flex",
   "version": "1.0.0",
-  "description": "Kami Flex Website with SIM Database",
-  "main": "index.html",
+  "description": "Kami Flex Website with Database",
+  "main": "database.js",
   "scripts": {
-    "start": "vercel dev"
+    "start": "node database.js"
   },
   "dependencies": {
     "express": "^4.18.2",
